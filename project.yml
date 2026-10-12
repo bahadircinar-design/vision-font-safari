@@ -1,0 +1,97 @@
+# XcodeGen spec for Vision Font (https://github.com/yonaskolb/XcodeGen).
+# The checked-in VisionFont.xcodeproj was generated from this file with ./generate-xcodeproj.sh.
+name: VisionFont
+options:
+  bundleIdPrefix: com.bahacinar
+  deploymentTarget:
+    macOS: "14.0"
+  developmentLanguage: en
+  createIntermediateGroups: true
+  groupSortPosition: top
+configFiles:
+  Debug: Config/Shared.xcconfig
+  Release: Config/Shared.xcconfig
+settings:
+  base:
+    CODE_SIGN_STYLE: Automatic
+    DEVELOPMENT_TEAM: ""          # pick your Personal Team in Xcode ▸ Signing & Capabilities
+    ENABLE_HARDENED_RUNTIME: YES
+    ENABLE_USER_SCRIPT_SANDBOXING: YES
+    SWIFT_EMIT_LOC_STRINGS: YES
+    DEAD_CODE_STRIPPING: YES
+targets:
+  Vision Font:
+    type: application
+    platform: macOS
+    sources:
+      - path: App
+        excludes: ["*.entitlements"]
+      - path: Shared
+      - path: Config
+        buildPhase: none
+      - path: App/VisionFont.entitlements
+        buildPhase: none
+      - path: App/VisionFont-NoAppGroup.entitlements
+        buildPhase: none
+    settings:
+      base:
+        PRODUCT_NAME: Vision Font
+        PRODUCT_BUNDLE_IDENTIFIER: com.bahacinar.VisionFont
+        INFOPLIST_FILE: App/Info.plist
+        GENERATE_INFOPLIST_FILE: NO
+        CODE_SIGN_ENTITLEMENTS: $(VF_APP_ENTITLEMENTS_$(VF_USE_APP_GROUP))
+        ASSETCATALOG_COMPILER_APPICON_NAME: AppIcon
+        ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME: AccentColor
+        COMBINE_HIDPI_IMAGES: YES
+        LD_RUNPATH_SEARCH_PATHS: "$(inherited) @executable_path/../Frameworks"
+    dependencies:
+      - target: Vision Font Extension
+        embed: true
+        codeSign: true
+  Vision Font Extension:
+    type: app-extension
+    platform: macOS
+    sources:
+      - path: Extension
+        excludes: ["Resources/**", "*.entitlements", "Info.plist"]
+      - path: Extension/Info.plist
+        buildPhase: none
+      - path: Extension/VisionFontExtension.entitlements
+        buildPhase: none
+      - path: Extension/VisionFontExtension-NoAppGroup.entitlements
+        buildPhase: none
+      - path: Shared
+      # Web extension files must sit at the root of the .appex Resources folder (manifest.json first),
+      # with images/ kept as a folder: top-level files individually + images as a folder reference.
+      - path: Extension/Resources
+        excludes: ["images", "images/**"]
+        buildPhase: resources
+      - path: Extension/Resources/images
+        type: folder
+        buildPhase: resources
+    dependencies:
+      - sdk: SafariServices.framework
+    settings:
+      base:
+        PRODUCT_NAME: Vision Font Extension
+        PRODUCT_BUNDLE_IDENTIFIER: com.bahacinar.VisionFont.Extension
+        INFOPLIST_FILE: Extension/Info.plist
+        GENERATE_INFOPLIST_FILE: NO
+        CODE_SIGN_ENTITLEMENTS: $(VF_EXT_ENTITLEMENTS_$(VF_USE_APP_GROUP))
+        SKIP_INSTALL: YES
+        LD_RUNPATH_SEARCH_PATHS: "$(inherited) @executable_path/../Frameworks @executable_path/../../../../Frameworks"
+schemes:
+  Vision Font:
+    build:
+      targets:
+        Vision Font: all
+        Vision Font Extension: all
+    run:
+      config: Debug
+      executable: Vision Font
+    profile:
+      config: Release
+    analyze:
+      config: Debug
+    archive:
+      config: Release

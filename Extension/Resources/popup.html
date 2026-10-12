@@ -1,0 +1,72 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Vision Font</title>
+  <link rel="stylesheet" href="popup.css">
+</head>
+<body>
+  <header>
+    <img src="images/icon-48.png" alt="" width="24" height="24">
+    <h1>Vision Font</h1>
+    <span id="statusPill" class="pill">…</span>
+  </header>
+
+  <section id="companionWarn" class="warn" hidden>
+    <strong id="warnTitle">Companion app not running</strong>
+    <p id="warnBody">Open <b>Vision Font</b> from your Applications folder (or press Run in Xcode), then turn on
+      <b>Tracking</b> from the eye in the menu bar. Until then the extension keeps the last size, or uses the manual distance below.</p>
+  </section>
+
+  <section class="readout" aria-live="polite">
+    <div><span class="lbl">Distance</span><span class="val"><b id="dist">–</b> cm</span><span id="distSrc" class="sub"></span></div>
+    <div><span class="lbl">Blur</span><span class="val"><b id="blur">–</b> D</span><span id="wearing" class="sub"></span></div>
+    <div><span class="lbl">Scale</span><span class="val"><b id="scale">–</b>×</span><span id="capNote" class="sub"></span></div>
+  </section>
+
+  <section class="rows">
+    <label class="row switch"><span>On for <b id="siteName">this site</b></span><input type="checkbox" id="siteOn" role="switch"></label>
+    <label class="row switch"><span>Pause everywhere</span><input type="checkbox" id="paused" role="switch"></label>
+
+    <div class="row">
+      <span>Mode</span>
+      <div class="seg" role="radiogroup" aria-label="Scaling mode">
+        <button type="button" role="radio" data-mode="zoom" aria-checked="true">Zoom page</button>
+        <button type="button" role="radio" data-mode="font" aria-checked="false">Text only</button>
+      </div>
+    </div>
+
+    <div class="row col">
+      <label for="comfort">Comfort <output id="comfortOut">100%</output></label>
+      <input type="range" id="comfort" min="0.7" max="1.6" step="0.05" value="1">
+    </div>
+
+    <div class="row col">
+      <label for="cap">Maximum scale <output id="capOut">2.5×</output></label>
+      <input type="range" id="cap" min="1.2" max="4" step="0.1" value="2.5">
+    </div>
+
+    <details>
+      <summary>When there's no live distance</summary>
+      <div class="row">
+        <span>Use</span>
+        <select id="fallback">
+          <option value="hold">the last measured distance</option>
+          <option value="manual">the manual distance</option>
+        </select>
+      </div>
+      <div class="row col">
+        <label for="manualCm">Manual distance <output id="manualCmOut">60 cm</output></label>
+        <input type="range" id="manualCm" min="25" max="150" step="1" value="60">
+      </div>
+    </details>
+  </section>
+
+  <footer>
+    <p id="diag" class="diag"></p>
+    <p class="fine">Prescription, glasses and screen size are set in the Vision Font menu-bar app. Not a medical device.</p>
+  </footer>
+  <script src="popup.js"></script>
+</body>
+</html>

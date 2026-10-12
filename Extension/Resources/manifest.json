@@ -1,0 +1,37 @@
+{
+  "manifest_version": 3,
+  "name": "Vision Font",
+  "short_name": "Vision Font",
+  "version": "1.0",
+  "description": "Resizes web pages to your eye prescription and your live distance from the screen (measured by the Vision Font Mac app). Not a medical device.",
+  "icons": {
+    "48": "images/icon-48.png",
+    "96": "images/icon-96.png",
+    "128": "images/icon-128.png",
+    "256": "images/icon-256.png",
+    "512": "images/icon-512.png"
+  },
+  "background": {
+    "service_worker": "background.js"
+  },
+  "content_scripts": [
+    {
+      "matches": ["<all_urls>"],
+      "js": ["content.js"],
+      "run_at": "document_start",
+      "all_frames": false
+    }
+  ],
+  "action": {
+    "default_title": "Vision Font",
+    "default_popup": "popup.html",
+    "default_icon": {
+      "16": "images/toolbar-icon-16.png",
+      "19": "images/toolbar-icon-19.png",
+      "32": "images/toolbar-icon-32.png",
+      "38": "images/toolbar-icon-38.png"
+    }
+  },
+  "permissions": ["nativeMessaging", "storage", "activeTab"],
+  "host_permissions": ["<all_urls>"]
+}

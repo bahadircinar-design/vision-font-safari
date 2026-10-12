@@ -1,0 +1,569 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 77;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		02F354C7F846D71E8247F583 /* AppModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C93337398858B8F1D33CB27 /* AppModel.swift */; };
+		0786BFB17EC11DB775EBB2C0 /* DistanceTracker.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9FD5E2BDD0A4B1D9C9775F5 /* DistanceTracker.swift */; };
+		08F146C93EAD3589336ABF4B /* VisionFontApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD1B51012B70A5209A5CF4F7 /* VisionFontApp.swift */; };
+		17969A93D391B2135BD7C80E /* SafariWebExtensionHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95F005FA0BBA0BC7B8EE0493 /* SafariWebExtensionHandler.swift */; };
+		1ED816F256BE661DFB8DF7A0 /* VisionModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F3FAA41F6845CE4FCF0E642 /* VisionModel.swift */; };
+		2BEF37DF7749736068669AF6 /* scale.js in Resources */ = {isa = PBXBuildFile; fileRef = 570EFB9BA3E3F32FC5A88FB7 /* scale.js */; };
+		2E4E3DA48CF0647B3DAF7C24 /* DistanceEstimator.swift in Sources */ = {isa = PBXBuildFile; fileRef = A95F5640BC8CA4731607A4D1 /* DistanceEstimator.swift */; };
+		34D16990B51A4EF9008213F5 /* LoginItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA82E9E3114DF0800A5D7E91 /* LoginItem.swift */; };
+		36A3A48CBA6CB70C9BC435A5 /* popup.js in Resources */ = {isa = PBXBuildFile; fileRef = 5F9011C19C8B802019EBF3DB /* popup.js */; };
+		5048FF6294049D30AC6E4B4D /* SharedStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54B232DA0CE34852640AFE5A /* SharedStore.swift */; };
+		5198413A0C1B0EAFC86ABF37 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1040EB0A92A0FB04868762A7 /* Assets.xcassets */; };
+		63D68F1E39FFCEA8992EA336 /* ScreenInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 335720833E6D1B6F99AC8223 /* ScreenInfo.swift */; };
+		693CD0BCF214B91A119F67A3 /* popup.html in Resources */ = {isa = PBXBuildFile; fileRef = ADE98E3E1F07E06A824BF33F /* popup.html */; };
+		76FA5C5C51D81FB3F4C0884E /* content.js in Resources */ = {isa = PBXBuildFile; fileRef = A9DC1AF0FA7625602E69BC24 /* content.js */; };
+		B69AF45DBAB006D25FB99E62 /* manifest.json in Resources */ = {isa = PBXBuildFile; fileRef = 6884920482CB7FBF6DE74F25 /* manifest.json */; };
+		B6A26D031AEA80B5BEDC4262 /* model.js in Resources */ = {isa = PBXBuildFile; fileRef = A49DBEFBFD310361AF6E9118 /* model.js */; };
+		BB7BC77D69AB5610D2657CA0 /* DistanceEstimator.swift in Sources */ = {isa = PBXBuildFile; fileRef = A95F5640BC8CA4731607A4D1 /* DistanceEstimator.swift */; };
+		C700F271668DEADE7CA287EA /* SafariServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 912DA85F897619FBD719FC7F /* SafariServices.framework */; };
+		C86EB8C13B6C160021B44A49 /* SharedStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54B232DA0CE34852640AFE5A /* SharedStore.swift */; };
+		CBD17880B3E6209280B7A89E /* popup.css in Resources */ = {isa = PBXBuildFile; fileRef = E336C70228D23FF8B25A20FD /* popup.css */; };
+		D55A244861361E6B8605C221 /* VisionModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F3FAA41F6845CE4FCF0E642 /* VisionModel.swift */; };
+		D98C6192FDD984C22AFEE707 /* images in Resources */ = {isa = PBXBuildFile; fileRef = C645D7CE21CD67E285746611 /* images */; };
+		E0057D4FF89DCD21D2D29A5A /* Vision Font Extension.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = 2FBDD60CC6E5428D48822BE3 /* Vision Font Extension.appex */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		ECBB921AFBCA4B791B08CACA /* background.js in Resources */ = {isa = PBXBuildFile; fileRef = 1FEF319F87CE2BBCFC16ED88 /* background.js */; };
+		FCCC773C960E71C4C9D015B9 /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F98800CC2FA30A7B4D720A97 /* SettingsView.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		13E8CD034E6550ECCEF7330D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C026AEA0E4F3905EAD76D053 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = C14B54E08C4A5D77B444B2A6;
+			remoteInfo = "Vision Font Extension";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		42ED7D544CE1FA8CD2C37F96 /* Embed Foundation Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				E0057D4FF89DCD21D2D29A5A /* Vision Font Extension.appex in Embed Foundation Extensions */,
+			);
+			name = "Embed Foundation Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		0F3FAA41F6845CE4FCF0E642 /* VisionModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VisionModel.swift; sourceTree = "<group>"; };
+		1040EB0A92A0FB04868762A7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		16A03829B2B95C1D0470CA6E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		1D5DF40AFE8D0113F98AA56E /* VisionFont-NoAppGroup.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "VisionFont-NoAppGroup.entitlements"; sourceTree = "<group>"; };
+		1FEF319F87CE2BBCFC16ED88 /* background.js */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.javascript; path = background.js; sourceTree = "<group>"; };
+		2FBDD60CC6E5428D48822BE3 /* Vision Font Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "Vision Font Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		31FCE637D27E20C25D196FBE /* VisionFontExtension-NoAppGroup.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "VisionFontExtension-NoAppGroup.entitlements"; sourceTree = "<group>"; };
+		335720833E6D1B6F99AC8223 /* ScreenInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScreenInfo.swift; sourceTree = "<group>"; };
+		54B232DA0CE34852640AFE5A /* SharedStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SharedStore.swift; sourceTree = "<group>"; };
+		570EFB9BA3E3F32FC5A88FB7 /* scale.js */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.javascript; path = scale.js; sourceTree = "<group>"; };
+		5DE9DCAB7DC88E0C863A70E1 /* VisionFont.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = VisionFont.entitlements; sourceTree = "<group>"; };
+		5F9011C19C8B802019EBF3DB /* popup.js */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.javascript; path = popup.js; sourceTree = "<group>"; };
+		6884920482CB7FBF6DE74F25 /* manifest.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = manifest.json; sourceTree = "<group>"; };
+		7AE0674D7337ABA20E39DFB7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		8C93337398858B8F1D33CB27 /* AppModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppModel.swift; sourceTree = "<group>"; };
+		9039D0FD04462A1C3D25D21A /* Vision Font.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Vision Font.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		912DA85F897619FBD719FC7F /* SafariServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SafariServices.framework; path = System/Library/Frameworks/SafariServices.framework; sourceTree = SDKROOT; };
+		95F005FA0BBA0BC7B8EE0493 /* SafariWebExtensionHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SafariWebExtensionHandler.swift; sourceTree = "<group>"; };
+		A49DBEFBFD310361AF6E9118 /* model.js */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.javascript; path = model.js; sourceTree = "<group>"; };
+		A95F5640BC8CA4731607A4D1 /* DistanceEstimator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DistanceEstimator.swift; sourceTree = "<group>"; };
+		A9DC1AF0FA7625602E69BC24 /* content.js */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.javascript; path = content.js; sourceTree = "<group>"; };
+		ADE98E3E1F07E06A824BF33F /* popup.html */ = {isa = PBXFileReference; lastKnownFileType = text.html; path = popup.html; sourceTree = "<group>"; };
+		C645D7CE21CD67E285746611 /* images */ = {isa = PBXFileReference; lastKnownFileType = folder; name = images; path = Extension/Resources/images; sourceTree = SOURCE_ROOT; };
+		CD1B51012B70A5209A5CF4F7 /* VisionFontApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VisionFontApp.swift; sourceTree = "<group>"; };
+		E336C70228D23FF8B25A20FD /* popup.css */ = {isa = PBXFileReference; lastKnownFileType = text.css; path = popup.css; sourceTree = "<group>"; };
+		E9FD5E2BDD0A4B1D9C9775F5 /* DistanceTracker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DistanceTracker.swift; sourceTree = "<group>"; };
+		EA82E9E3114DF0800A5D7E91 /* LoginItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginItem.swift; sourceTree = "<group>"; };
+		EAE4186AEB6236C7B63B677A /* Shared.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Shared.xcconfig; sourceTree = "<group>"; };
+		F21C9816E040036D68F70F89 /* VisionFontExtension.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = VisionFontExtension.entitlements; sourceTree = "<group>"; };
+		F98800CC2FA30A7B4D720A97 /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		4C62F0F033DDAC7A113F18EA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C700F271668DEADE7CA287EA /* SafariServices.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		061D3EF608630AFBD9F47B97 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				2FBDD60CC6E5428D48822BE3 /* Vision Font Extension.appex */,
+				9039D0FD04462A1C3D25D21A /* Vision Font.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		303873D2929FB46B38421D19 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				912DA85F897619FBD719FC7F /* SafariServices.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		3B5157A3C7EB29F7A15E5BE9 /* Shared */ = {
+			isa = PBXGroup;
+			children = (
+				A95F5640BC8CA4731607A4D1 /* DistanceEstimator.swift */,
+				54B232DA0CE34852640AFE5A /* SharedStore.swift */,
+				0F3FAA41F6845CE4FCF0E642 /* VisionModel.swift */,
+			);
+			path = Shared;
+			sourceTree = "<group>";
+		};
+		4738590D4D5A7DAEDB82258A /* Config */ = {
+			isa = PBXGroup;
+			children = (
+				EAE4186AEB6236C7B63B677A /* Shared.xcconfig */,
+			);
+			path = Config;
+			sourceTree = "<group>";
+		};
+		62A5BA1949FE0FB6A75C615F /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				B5DC937A0CFAE2F12DA265CC /* Resources */,
+				16A03829B2B95C1D0470CA6E /* Info.plist */,
+				95F005FA0BBA0BC7B8EE0493 /* SafariWebExtensionHandler.swift */,
+				31FCE637D27E20C25D196FBE /* VisionFontExtension-NoAppGroup.entitlements */,
+				F21C9816E040036D68F70F89 /* VisionFontExtension.entitlements */,
+			);
+			path = Extension;
+			sourceTree = "<group>";
+		};
+		8980ADA2DB964C764391DB4A = {
+			isa = PBXGroup;
+			children = (
+				B1CCAEB7AB5E12C26B4D7A42 /* App */,
+				4738590D4D5A7DAEDB82258A /* Config */,
+				62A5BA1949FE0FB6A75C615F /* Extension */,
+				3B5157A3C7EB29F7A15E5BE9 /* Shared */,
+				303873D2929FB46B38421D19 /* Frameworks */,
+				061D3EF608630AFBD9F47B97 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		B1CCAEB7AB5E12C26B4D7A42 /* App */ = {
+			isa = PBXGroup;
+			children = (
+				8C93337398858B8F1D33CB27 /* AppModel.swift */,
+				1040EB0A92A0FB04868762A7 /* Assets.xcassets */,
+				E9FD5E2BDD0A4B1D9C9775F5 /* DistanceTracker.swift */,
+				7AE0674D7337ABA20E39DFB7 /* Info.plist */,
+				EA82E9E3114DF0800A5D7E91 /* LoginItem.swift */,
+				335720833E6D1B6F99AC8223 /* ScreenInfo.swift */,
+				F98800CC2FA30A7B4D720A97 /* SettingsView.swift */,
+				1D5DF40AFE8D0113F98AA56E /* VisionFont-NoAppGroup.entitlements */,
+				5DE9DCAB7DC88E0C863A70E1 /* VisionFont.entitlements */,
+				CD1B51012B70A5209A5CF4F7 /* VisionFontApp.swift */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		B5DC937A0CFAE2F12DA265CC /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				1FEF319F87CE2BBCFC16ED88 /* background.js */,
+				A9DC1AF0FA7625602E69BC24 /* content.js */,
+				C645D7CE21CD67E285746611 /* images */,
+				6884920482CB7FBF6DE74F25 /* manifest.json */,
+				A49DBEFBFD310361AF6E9118 /* model.js */,
+				E336C70228D23FF8B25A20FD /* popup.css */,
+				ADE98E3E1F07E06A824BF33F /* popup.html */,
+				5F9011C19C8B802019EBF3DB /* popup.js */,
+				570EFB9BA3E3F32FC5A88FB7 /* scale.js */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		8C8CB8A2B7C10F09890BC5E8 /* Vision Font */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BFA674BBDB1847BAEF2C4B0E /* Build configuration list for PBXNativeTarget "Vision Font" */;
+			buildPhases = (
+				51C902F2AB0546B51EA415D5 /* Sources */,
+				0585EF419E3CC55A4C01F74F /* Resources */,
+				42ED7D544CE1FA8CD2C37F96 /* Embed Foundation Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				AFD26B6425BBA1438742A86F /* PBXTargetDependency */,
+			);
+			name = "Vision Font";
+			packageProductDependencies = (
+			);
+			productName = "Vision Font";
+			productReference = 9039D0FD04462A1C3D25D21A /* Vision Font.app */;
+			productType = "com.apple.product-type.application";
+		};
+		C14B54E08C4A5D77B444B2A6 /* Vision Font Extension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 44A91C1DF2002528A92D4385 /* Build configuration list for PBXNativeTarget "Vision Font Extension" */;
+			buildPhases = (
+				C2D70F90923679037EEDFAB3 /* Sources */,
+				CD5774D96C5CC2C966D504B6 /* Resources */,
+				4C62F0F033DDAC7A113F18EA /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Vision Font Extension";
+			packageProductDependencies = (
+			);
+			productName = "Vision Font Extension";
+			productReference = 2FBDD60CC6E5428D48822BE3 /* Vision Font Extension.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		C026AEA0E4F3905EAD76D053 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = YES;
+				LastUpgradeCheck = 1430;
+				TargetAttributes = {
+					8C8CB8A2B7C10F09890BC5E8 = {
+						DevelopmentTeam = "";
+						ProvisioningStyle = Automatic;
+					};
+					C14B54E08C4A5D77B444B2A6 = {
+						DevelopmentTeam = "";
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = CACD5D812DBDD914E7514836 /* Build configuration list for PBXProject "VisionFont" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				Base,
+				en,
+			);
+			mainGroup = 8980ADA2DB964C764391DB4A;
+			minimizedProjectReferenceProxies = 1;
+			preferredProjectObjectVersion = 77;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				8C8CB8A2B7C10F09890BC5E8 /* Vision Font */,
+				C14B54E08C4A5D77B444B2A6 /* Vision Font Extension */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		0585EF419E3CC55A4C01F74F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5198413A0C1B0EAFC86ABF37 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CD5774D96C5CC2C966D504B6 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				ECBB921AFBCA4B791B08CACA /* background.js in Resources */,
+				76FA5C5C51D81FB3F4C0884E /* content.js in Resources */,
+				D98C6192FDD984C22AFEE707 /* images in Resources */,
+				B69AF45DBAB006D25FB99E62 /* manifest.json in Resources */,
+				B6A26D031AEA80B5BEDC4262 /* model.js in Resources */,
+				CBD17880B3E6209280B7A89E /* popup.css in Resources */,
+				693CD0BCF214B91A119F67A3 /* popup.html in Resources */,
+				36A3A48CBA6CB70C9BC435A5 /* popup.js in Resources */,
+				2BEF37DF7749736068669AF6 /* scale.js in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		51C902F2AB0546B51EA415D5 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				02F354C7F846D71E8247F583 /* AppModel.swift in Sources */,
+				BB7BC77D69AB5610D2657CA0 /* DistanceEstimator.swift in Sources */,
+				0786BFB17EC11DB775EBB2C0 /* DistanceTracker.swift in Sources */,
+				34D16990B51A4EF9008213F5 /* LoginItem.swift in Sources */,
+				63D68F1E39FFCEA8992EA336 /* ScreenInfo.swift in Sources */,
+				FCCC773C960E71C4C9D015B9 /* SettingsView.swift in Sources */,
+				5048FF6294049D30AC6E4B4D /* SharedStore.swift in Sources */,
+				08F146C93EAD3589336ABF4B /* VisionFontApp.swift in Sources */,
+				1ED816F256BE661DFB8DF7A0 /* VisionModel.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C2D70F90923679037EEDFAB3 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2E4E3DA48CF0647B3DAF7C24 /* DistanceEstimator.swift in Sources */,
+				17969A93D391B2135BD7C80E /* SafariWebExtensionHandler.swift in Sources */,
+				C86EB8C13B6C160021B44A49 /* SharedStore.swift in Sources */,
+				D55A244861361E6B8605C221 /* VisionModel.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		AFD26B6425BBA1438742A86F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = C14B54E08C4A5D77B444B2A6 /* Vision Font Extension */;
+			targetProxy = 13E8CD034E6550ECCEF7330D /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		1CF2A6FB00A9424934E981AD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = "$(VF_EXT_ENTITLEMENTS_$(VF_USE_APP_GROUP))";
+				COMBINE_HIDPI_IMAGES = YES;
+				GENERATE_INFOPLIST_FILE = NO;
+				INFOPLIST_FILE = Extension/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @executable_path/../../../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.bahacinar.VisionFont.Extension;
+				PRODUCT_NAME = "Vision Font Extension";
+				SDKROOT = macosx;
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		229DAC11E26FF6EABA2749EF /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = EAE4186AEB6236C7B63B677A /* Shared.xcconfig */;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_STYLE = Automatic;
+				COPY_PHASE_STRIP = NO;
+				DEAD_CODE_STRIPPING = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEVELOPMENT_TEAM = "";
+				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+			};
+			name = Release;
+		};
+		391C6F0A59F23B726F3107EE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = "$(VF_APP_ENTITLEMENTS_$(VF_USE_APP_GROUP))";
+				COMBINE_HIDPI_IMAGES = YES;
+				GENERATE_INFOPLIST_FILE = NO;
+				INFOPLIST_FILE = App/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.bahacinar.VisionFont;
+				PRODUCT_NAME = "Vision Font";
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		8D62822B0CB86F0E1A8F0A96 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = "$(VF_APP_ENTITLEMENTS_$(VF_USE_APP_GROUP))";
+				COMBINE_HIDPI_IMAGES = YES;
+				GENERATE_INFOPLIST_FILE = NO;
+				INFOPLIST_FILE = App/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.bahacinar.VisionFont;
+				PRODUCT_NAME = "Vision Font";
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		8FF1C4D01816EF4470C0A28E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = "$(VF_EXT_ENTITLEMENTS_$(VF_USE_APP_GROUP))";
+				COMBINE_HIDPI_IMAGES = YES;
+				GENERATE_INFOPLIST_FILE = NO;
+				INFOPLIST_FILE = Extension/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @executable_path/../../../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.bahacinar.VisionFont.Extension;
+				PRODUCT_NAME = "Vision Font Extension";
+				SDKROOT = macosx;
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+		9A80910C6446074361439E9C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = EAE4186AEB6236C7B63B677A /* Shared.xcconfig */;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_STYLE = Automatic;
+				COPY_PHASE_STRIP = NO;
+				DEAD_CODE_STRIPPING = YES;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEVELOPMENT_TEAM = "";
+				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"$(inherited)",
+					"DEBUG=1",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		44A91C1DF2002528A92D4385 /* Build configuration list for PBXNativeTarget "Vision Font Extension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1CF2A6FB00A9424934E981AD /* Debug */,
+				8FF1C4D01816EF4470C0A28E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		BFA674BBDB1847BAEF2C4B0E /* Build configuration list for PBXNativeTarget "Vision Font" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				391C6F0A59F23B726F3107EE /* Debug */,
+				8D62822B0CB86F0E1A8F0A96 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		CACD5D812DBDD914E7514836 /* Build configuration list for PBXProject "VisionFont" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9A80910C6446074361439E9C /* Debug */,
+				229DAC11E26FF6EABA2749EF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = C026AEA0E4F3905EAD76D053 /* Project object */;
+}

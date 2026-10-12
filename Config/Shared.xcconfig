@@ -1,0 +1,20 @@
+// Vision Font — shared build settings for both targets.
+//
+// HOW THE APP AND THE SAFARI EXTENSION SHARE DATA
+// Both write/read a small JSON file in two places (readers use the newest):
+//   1. the App Group container  <TeamID>.com.bahacinar.visionfont   (works with a free Personal Team on macOS)
+//   2. ~/Library/Application Support/VisionFontShared/              (temporary-exception sandbox entitlement)
+//
+// If Xcode ever shows a signing error that mentions "App Groups" / "application-groups",
+// change YES to NO on the next line and build again. Sharing then uses only the folder (2).
+VF_USE_APP_GROUP = YES
+
+VF_APP_ENTITLEMENTS_YES = App/VisionFont.entitlements
+VF_APP_ENTITLEMENTS_NO = App/VisionFont-NoAppGroup.entitlements
+VF_EXT_ENTITLEMENTS_YES = Extension/VisionFontExtension.entitlements
+VF_EXT_ENTITLEMENTS_NO = Extension/VisionFontExtension-NoAppGroup.entitlements
+
+MARKETING_VERSION = 1.0
+CURRENT_PROJECT_VERSION = 1
+MACOSX_DEPLOYMENT_TARGET = 14.0
+SWIFT_VERSION = 5.0
